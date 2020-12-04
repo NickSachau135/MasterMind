@@ -147,3 +147,9 @@ section.guess {
 .white {
     background: radial-gradient(circle at 5px 5px, white, white, gray);
 }
+
+.multipleColor {
+    margin-top: 25px;
+    font-family: 'Nerko One', cursive;
+    font-size: 25px;
+}

@@ -4,12 +4,14 @@
     <meta charset="UTF-8">
     <meta name="author" content="Nick Sachau">
     <meta name="description" content="">
-    <meta property="og:image" content="">
+    <meta property="og:image" content="images/logo.png">
     <meta property="og:description" content="">
     <meta property="og:title" content="">
-    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="icon" href="images/logo.png" type="image/x-icon">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Nerko+One&display=swap" rel="stylesheet">
     <title>MasterMind</title>
 </head>
 <body>
@@ -202,14 +204,19 @@
         </section>
 
         <section class="colorButtons">
-            <div onclick="chooseColor('red')" class="color red"></div>
-            <div onclick="chooseColor('orange')" class="color orange"></div>
-            <div onclick="chooseColor('yellow')" class="color yellow"></div>
-            <div onclick="chooseColor('green')" class="color green"></div>
-            <div onclick="chooseColor('blue')" class="color blue"></div>
-            <div onclick="chooseColor('purple')" class="color purple"></div>
-            <div onclick="chooseColor('pink')" class="color pink"></div>
+            <div onclick="chooseColor('red')" id="red" class="color red"></div>
+            <div onclick="chooseColor('orange')" id="orange" class="color orange"></div>
+            <div onclick="chooseColor('yellow')" id="yellow" class="color yellow"></div>
+            <div onclick="chooseColor('green')" id="green" class="color green"></div>
+            <div onclick="chooseColor('blue')" id="blue" class="color blue"></div>
+            <div onclick="chooseColor('purple')" id="purple" class="color purple"></div>
+            <div onclick="chooseColor('pink')" id="pink" class="color pink"></div>
         </section>
+
+        <div class="multipleColor">
+            <p id="multiple"></p>
+        </div>
+            
     </main>
 
     <script src="script.js"></script>
